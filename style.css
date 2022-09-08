@@ -1,0 +1,21 @@
+
+.paddedlist {
+    padding: 50px;
+}
+body {
+    font-family: "Century Gothic";
+}
+
+#andelement {
+    margin:-100px;
+}
+p a {
+    color: blue;
+}
+p a:hover {
+    color:red;
+}
+div {
+    border: 3px solid aquamarine;
+    border-radius: 40px;
+}
