@@ -24,11 +24,15 @@
             <version>3.0.6</version>
         </dependency>
         <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-jaxb</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+        <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-common</artifactId>
             <version>3.0.6</version>
         </dependency>
-
         <!-- Servlet API -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
