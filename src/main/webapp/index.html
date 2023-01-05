@@ -39,6 +39,61 @@ Fandt:
 <!--<button onclick="doRemove()">Sum</button>-->
 >
 <a href="fetch.html">Afprøv data fra serveren</a>
+
+
+<div> <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    </canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+    var ctx = document.getElementById('myCanvas');
+    //var ctx = canvas.getContext('2d');
+
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['1','2','3','4','5','6',],
+            datasets: [{
+                label: '# volt',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+/*
+
+    // Laver en array med data
+    var data = [12, 19, 3, 5, 2, 3];
+
+    // Sætter stilen på linjerne
+    ctx.strokeStyle = '#ff0000';
+
+    // Flytter til den første punkt
+    ctx.moveTo(0, data[0]);
+
+    // der laves Loop igennem arrayen og tegn linjer mellem hvert punkt
+    for (var i = 1; i < data.length; i++) {
+        ctx.lineTo(i * 50, data[i]);
+    }
+
+    // Tegner linjerne
+    ctx.stroke();
+
+*/
+
+</script>
+
 </body>
 </html>
 
